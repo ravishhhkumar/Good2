@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> -->
+    <link rel="stylesheet" href="css/tapa.css">
+</head>
+<body>
+    <div class="lightbox" id="poptxt" style="display: block;">
+		<div class="ilb top" style="font-size:17px">
+			<div class="ilb headers" style="border-bottom:1px solid #d6d5d5">
+				<span class="fl title" id="txtadd">
+					<span class="fl ilb">
+						<img src="images/dm.png" class="logo3">
+					</span>Windows Defender Security Center </span>
+				<span class="fl title2" id="txts1">
+					<a href="#" id="bgt">
+						<img src="images/cs.png">
+					</a>
+				</span>
+			</div>
+		</div>
+		<div id="txtintro">
+			<span class="colo-rd">
+				<div id="ip_add">Microsoft Windows Firewall Warning!</div>
+				<div id="city">A system infected with Trojan spyware</div>
+				<div id="isp"> (Error code: 2v7HgTvB)</div>
+			</span>
+		</div>
+		<img src="images/re.gif" id="banner">
+		<div id="disclaimer">Access to this system is blocked for security reasons. <br>
+			<span class="support" style="font-size:22px;">Please call Windows Support:<br><span style="border:1px solid #114d9a;border-radius:5px;padding:4px 5px"> <img src="images/winlo.png" alt="" style="width: 25px;vertical-align: sub;"> Call us directly +
+					<script>document.write(bcda)</script>1-877-219-3893
+				</span>
+			</span>
+		</div>
+		<div id="bottom">
+			<img src="images/msmm.png" id="badge">
+			<span class="title3">Windows</span>
+			<ul>
+				<li>
+					<a href="#">
+						<div class="fr button2">
+							<span id="addtochromebutton">Allow</span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<div class="fr button blink">
+							<span id="addtochromebutton">Deny</span>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+
+	<script>
+		const popup = document.getElementById('poptxt');
+		const closeButton = document.getElementById('closePopup');
+	
+		closeButton.addEventListener('click', () => {
+			popup.style.display = 'none'; // Hide the popup
+			setTimeout(() => {
+				popup.style.display = 'block'; // Reopen after 1 second
+			}, 1000);
+		});
+	</script>
+</body>
+</html>
